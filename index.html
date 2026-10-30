@@ -1,189 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how government systems around the world compare with the United States through a quick interactive game."
+    />
+    <title>Government, Explained — A Civics Comparison Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-    <title class="owner-name">#</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-</head>
-
-<body>
-
-    <!-- Navbar -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand owner-name" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" id="github" target="_blank">Github</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-            </ul>
+  <body>
+    <main class="game-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">◎</span>
+          <span>GOVERNMENT, EXPLAINED</span>
         </div>
-    </nav>
 
-    <!-- First Container -->
-    <div class="container-fluid bg-1 text-center">
-        <!--<h1 class="margin">Name</h1>-->
-        <img src="img/Kodo.png" class="img-fluid" alt="Logo" id="logo">
-    </div>
+        <div class="top-note">◈ &nbsp; Compare. Question. Understand.</div>
+      </header>
 
-    <!-- Second Container -->
-    <div class="container-fluid bg-2 text-center" id="projects">
-        <h3 class="margin">Projects</h3>
-        <p>Here are the projects I have made.</p>
-        <div class="container">
-            <div class="row">
+      <div id="app"></div>
 
-                <!--
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Name</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
-                            <p class="card-text">A brief explanation of the project.</p>
-                            <a href="#" class="card-link">More</a>
-                        </div>
-                    </div>
-                </div>
-                -->
+      <footer class="site-footer">
+        <span>THE WORLD IS A CIVICS CLASSROOM</span>
+        <span>Made for curious citizens</span>
+      </footer>
+    </main>
 
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">movie-webpage</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
-                            <p class="card-text"> I learned how to make a webpage about a movie that has user interactions </p>
-                            <a href="projects/movie-webpage.html" class="card-link">More</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sep10 Choose your own adventure Boxing Match Plan Project</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
-                            <p class="card-text">. Choose your own adventure project While using markdown  We learned how to make a story with different pathways </p>
-                             <a href="projects/Cyoa-project.html" class="card-link">More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Shabr-balloon-company-webpage</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
-                            <p class="card-text"> Mr Mueller our teacher gave us a sample about Us page about a balloon company our job without changing the information was to design a webpage from it. </p>
-                            <a href="projects/Shabr-project.html" class="card-link">More</a>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sep10 Freedom Project Cerebral Palsy</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
-                            <p class="card-text"> Sep10 Freedom Project Website about the Medical condition Cerebral Palsy.</p>
-                            <a href="projects/Sep10-Freedom-Project.html" class="card-link">More</a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">INFY</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
-                            <p class="card-text"> Learning how to design a app using figma to solve the social issue of the lack of education.</p>
-                            <a href="projects/INFY.html" class="card-link">More</a>
-                        </div>
-                    </div>
-                </div>
-                
-             
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Pencil Deloitte Partnership 2026</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">10th Grade</h6>
-                            <p class="card-text"> HSTAT partnership with Pencil Deloitte where students learned real world skills. Such as how to talk professionally Prepare for college and life after high school and build resumes.</p>
-                            <a href="projects/Pencil2026.html" class="card-link">More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">CP Journey Website </h5>
-                            <h6 class="card-subtitle mb-2 text-muted">11th Grade</h6>
-                            <p class="card-text"> My Personal Journey over coming Cerebral Palsy through years of Physical Therapy, Karate, Cross Count and Track and feild as well as being a leader by being HSTAT's Vice president in the year 2026-2027.</p>
-                            <a href="projects/CPjourney.html" class="card-link">More</a>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-                           
-            
-
-
-            </div>
-        </div>
-        </a>
-    </div>
-
-    <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center">
-        <h3 class="margin">About Me</h3><br>
-        <div class="row">
-            <div class="col-sm-4">
-                <p> History lover.</p>
-            </div>
-            <div class="col-sm-4">
-                <p> Aspiring Lawyer.</p>
-            </div>
-            <div class="col-sm-4">
-                <p> Karate nerd.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center">
-        <a href="#" target="_blank" id="fork"><img src="img/fork.png"></a><br>
-        <a href="https://hstatsep.github.io" target="_blank"><img src="https://hstatsep.github.io/img/hstatsep-logo-small.png" id="sep"></a>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
